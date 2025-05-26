@@ -18,17 +18,17 @@
 
 #elif defined(__linux__) && defined(__aarch64__)
 #define PYTHONHOME L"addons/py4godot/cpython-3.13.3-linux-arm64/python/"
-#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux-arm64/python/lib/python3.12/site-packages"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux-arm64/python/lib/python3.13/site-packages"
 
 
 #elif __linux__
 #define PYTHONHOME L"addons/py4godot/cpython-3.13.3-linux64/python"
-#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux64/python/lib/python3.12/site-packages"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux64/python/lib/python3.13/site-packages"
 
 
 #elif __APPLE__
 #define PYTHONHOME L"addons/py4godot/cpython-3.13.3-darwin64/python"
-#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-darwin64/python/lib/python3.12/site-packages"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-darwin64/python/lib/python3.13/site-packages"
 #endif
 #if !defined(GDN_EXPORT)
 #if defined(_WIN32)

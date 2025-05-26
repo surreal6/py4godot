@@ -41,11 +41,11 @@ def run(platform):
                      replace(".dll", ".pyd"))  # dst can be a folder; use copy2() to preserve timestamp
             else:
                 os.makedirs(os.path.dirname(
-                    f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.12/site-packages/" + strip_platform(
+                    f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.13/site-packages/" + strip_platform(
                         entry.lstrip("build").replace("#", "/"))),
                     exist_ok=True)
                 copy(entry,
-                     f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.12/site-packages/" + strip_platform(
+                     f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.13/site-packages/" + strip_platform(
                          entry.lstrip("build").replace("#", "/")).
                      replace(".dylib", ".so"))  # dst can be a folder; use copy2() to preserve timestamp
 
@@ -161,10 +161,10 @@ def copy_stub_files(platform):
                  f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/Lib/site-packages/" + file)
         else:
             os.makedirs(os.path.dirname(
-                f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.12/site-packages/" + file),
+                f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.13/site-packages/" + file),
                 exist_ok=True)
             copy(file,
-                 f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.12/site-packages/" + file)
+                 f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.13/site-packages/" + file)
 
 
 def copy_experimental(platform):
@@ -181,7 +181,7 @@ def copy_experimental(platform):
              f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/Lib/site-packages/" + file)
         else:
             copy(file,
-             f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.12/site-packages/" + file)
+             f"build/final/{platform}/{config_data['python_ver']}-{platform}/python/lib/python3.13/site-packages/" + file)
 
 
 def onerror(func, path, exc_info):

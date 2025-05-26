@@ -73,7 +73,7 @@ $ pip install -r requirements.txt  # load dependencies from the text file requir
 ```
 If you are on Python 3.12, you unfortunately have to use this workaround:
 ```console
-$ pip install setuptools #Weirdly cython on linux depends on distutils. But python3.12 doesn't provide this anymore. So we have to use this workaround
+$ pip install setuptools #Weirdly cython on linux depends on distutils. But python3.13 doesn't provide this anymore. So we have to use this workaround
 $ python copy_distutils.py
 ```
 ### Generating files
