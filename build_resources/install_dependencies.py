@@ -46,7 +46,7 @@ if __name__ == '__main__':
         lines = f.readlines()
 
     current_path = os.getcwd()
-    os.chdir("addons/py4godot/cpython-3.12.4-windows64/python/")
+    os.chdir("addons/py4godot/cpython-3.13.3-windows64/python/")
 
     for package in lines:
         # Use subprocess to invoke pip using `python -m pip`

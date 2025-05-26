@@ -214,7 +214,7 @@ try:
     if should_create_plugin.lower() == "true":
         if  os.path.exists("build/py4godot") and os.path.isdir("build/py4godot"):
             shutil.rmtree("build/py4godot")
-        copytree(f"build/final/{args.target_platform}/cpython-3.12.4-{args.target_platform}", f"build/py4godot/cpython-3.12.4-{args.target_platform}")
+        copytree(f"build/final/{args.target_platform}/cpython-3.13.3-{args.target_platform}", f"build/py4godot/cpython-3.13.3-{args.target_platform}")
         shutil.copy("build_resources/python.gdextension", "build/py4godot/python.gdextension")
         shutil.copy("build_resources/dependencies.txt", "build/py4godot/dependencies.txt")
         shutil.copy("build_resources/install_dependencies.py", "build/py4godot/install_dependencies.py")

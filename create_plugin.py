@@ -55,7 +55,7 @@ def run_docker():
             print(f"Folder '{folder_path}' already exists.")
         f = open(f'plugin/{build.platform[:-2]}.tar', 'wb')
 
-        bits, stat = last_container.get_archive(f'/app/build/final/{build.platform}/cpython-3.12.4-{build.platform}')
+        bits, stat = last_container.get_archive(f'/app/build/final/{build.platform}/cpython-3.13.3-{build.platform}')
 
         print(stat)
         for chunk in bits:

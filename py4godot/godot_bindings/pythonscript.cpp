@@ -18,10 +18,10 @@ extern "C" {
 
         #if defined(__linux__)
         // Load the shared library on Linux
-        void* handle = dlopen("addons/py4godot/cpython-3.12.4-linux64/python/bin/main.so", RTLD_NOW | RTLD_GLOBAL);
+        void* handle = dlopen("addons/py4godot/cpython-3.13.3-linux64/python/bin/main.so", RTLD_NOW | RTLD_GLOBAL);
         #elif defined(__APPLE__)
         // Load the shared library on macOS
-        void* handle = dlopen("addons/py4godot/cpython-3.12.4-darwin64/python/bin/main.dylib", RTLD_NOW | RTLD_GLOBAL);
+        void* handle = dlopen("addons/py4godot/cpython-3.13.3-darwin64/python/bin/main.dylib", RTLD_NOW | RTLD_GLOBAL);
         #endif
 
         #if defined(__linux__) || defined(__APPLE__)

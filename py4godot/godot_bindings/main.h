@@ -6,29 +6,29 @@
 
 
 #ifdef _WIN64
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-windows64/python"
-#define PYTHONPATH "addons/py4godot/cpython-3.12.4-windows64/python/Lib/site-packages"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-windows64/python"
+#define PYTHONPATH "addons/py4godot/cpython-3.13.3-windows64/python/Lib/site-packages"
 
 #elif _WIN32
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-windows32/python/"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-windows32/python/"
 
 #elif __linux32__ && defined(__i386__)
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-linux32/python/"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-linux32/python/"
 
 
 #elif defined(__linux__) && defined(__aarch64__)
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-linux-arm64/python/"
-#define PYTHONPATH "/addons/py4godot/cpython-3.12.4-linux-arm64/python/lib/python3.12/site-packages"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-linux-arm64/python/"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux-arm64/python/lib/python3.12/site-packages"
 
 
 #elif __linux__
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-linux64/python"
-#define PYTHONPATH "/addons/py4godot/cpython-3.12.4-linux64/python/lib/python3.12/site-packages"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-linux64/python"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-linux64/python/lib/python3.12/site-packages"
 
 
 #elif __APPLE__
-#define PYTHONHOME L"addons/py4godot/cpython-3.12.4-darwin64/python"
-#define PYTHONPATH "/addons/py4godot/cpython-3.12.4-darwin64/python/lib/python3.12/site-packages"
+#define PYTHONHOME L"addons/py4godot/cpython-3.13.3-darwin64/python"
+#define PYTHONPATH "/addons/py4godot/cpython-3.13.3-darwin64/python/lib/python3.12/site-packages"
 #endif
 #if !defined(GDN_EXPORT)
 #if defined(_WIN32)

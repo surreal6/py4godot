@@ -107,8 +107,8 @@ def copy_tests(platform):
     for core_test in core_tests + binding_tests + library_tests:
         print(f"Copying to: {core_test}")
 
-        src_path = f"build/final/{platform}/cpython-3.12.4-{platform}"
-        dest_path = f"{core_test}/addons/py4godot/cpython-3.12.4-{platform}"
+        src_path = f"build/final/{platform}/cpython-3.13.3-{platform}"
+        dest_path = f"{core_test}/addons/py4godot/cpython-3.13.3-{platform}"
 
         print("Checking source path:", src_path)
         print("Checking destination path:", dest_path)

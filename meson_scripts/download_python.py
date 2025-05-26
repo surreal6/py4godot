@@ -14,7 +14,7 @@ platform_dict = {"windows64": "x86_64-pc-windows-msvc-install_only_stripped", "w
                  "linuxarm64":"armv7-unknown-linux-gnueabi-install_only_stripped"}
 python_files_dir = "python_files"
 copy_dir = "build/final"
-python_ver = "cpython-3.12.4"
+python_ver = "cpython-3.13.3"
 
 sitecustomize_py = """
 import site

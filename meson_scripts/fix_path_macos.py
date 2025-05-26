@@ -6,7 +6,7 @@ from pathlib import Path
 # Define the old and new paths for libpython
 old_python_path = "/install/lib/libpython3.12.dylib"
 new_python_path = "/lib/libpython3.12.dylib"
-#new_python_path = "/Users/customer/Documents/py4godot/example/addons/py4godot/cpython-3.12.4-darwin64/python/lib/libpython3.12.dylib"
+#new_python_path = "/Users/customer/Documents/py4godot/example/addons/py4godot/cpython-3.13.3-darwin64/python/lib/libpython3.12.dylib"
 parent_folder = "python"
 
 def is_main(path):
@@ -37,7 +37,7 @@ def fix_macos_paths():
         # Check if the .dylib file contains the old Python path
         command = [
             "install_name_tool",
-            #"-change", old_python_path, "/Users/customer/Documents/py4godot/example/addons/py4godot/cpython-3.12.4-darwin64/python/lib/libpython3.12.dylib", abs_entry
+            #"-change", old_python_path, "/Users/customer/Documents/py4godot/example/addons/py4godot/cpython-3.13.3-darwin64/python/lib/libpython3.12.dylib", abs_entry
             "-change", old_python_path, rel_path+ new_python_path, abs_entry
         ]
         try:
