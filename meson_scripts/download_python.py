@@ -35,10 +35,10 @@ def download_file(platform, allow_copy=False):
         url = f'https://github.com/indygreg/python-build-standalone/releases/download/20240726/{python_ver}+20240726-{platform_dict[platform]}.tar.gz'
         python_file = f'{python_files_dir}/{python_ver}-{platform_dict[platform]}.tar.gz'
     elif platform == "linux64":
-        url = f'https://github.com/niklas2902/prebuild-python-linux64/releases/download/release-0.1/{python_ver}-linux64.zip'
+        url = f'https://github.com/surreal6/prebuild-python-linux64/releases/download/release-0.1/{python_ver}-linux64.zip'
         python_file = f'{python_files_dir}/{python_ver}-linux64.zip'
     else :
-        url = f'https://github.com/niklas2902/prebuild-python-linux32/releases/download/release-0.1/{python_ver}-linux32.zip'
+        url = f'https://github.com/surreal6/prebuild-python-linux32/releases/download/release-0.1/{python_ver}-linux32.zip'
         python_file = f'{python_files_dir}/{python_ver}-linux32.zip'
 
     export_name = f"{python_ver}-" + platform
